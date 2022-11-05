@@ -28,7 +28,7 @@ app.all('*', (req, res) => {
 	}
 });
 
-const port = 4000;
+const port = 8080;
 
 app.listen(port, () => {
 	console.log(`Server started on port ${port}`);
