@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI);
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: 'https://nixoals-to-do-list.netlify.app' }));
 
 app.use(express.json());
 
